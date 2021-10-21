@@ -1,0 +1,155 @@
+第一个问题
+#include<stdio.h>
+int main(){
+ int a,b,c,d,e;
+    scanf("%d",&c);
+ for(d=0;d<c;d++){
+     scanf("%d%d",&a,&b);
+     e=a+b;
+     printf("%d\n",e);
+ }
+}
+第二个问题
+#include<stdio.h>
+int main(){
+ int a,b,c=1;
+ scanf("%d",&a);
+ for(b=1;b<=a;b++){
+  c*=b;
+ }
+ printf("%d",c);
+}
+第三个问题
+#include<stdio.h>
+int main(){
+ int a=0,b,c=1,d;
+ scanf("%d",&d);
+ for(b=1;b<=1000;b++){
+  a++;
+  c*=b;
+  if(c>d){
+  printf("m<=%d",a);
+  break;}
+ }
+}
+第四个问题
+#include<stdio.h>
+int main(){
+ double a,b,c,d,e,f,n,x,y,z,q;
+ scanf("%lf",&n);
+ for(a=1;a<=n;a++){
+      x=1;
+   y=1;
+   d=0;
+   e=1;
+  for(b=1;b<=a;b++){
+   z=x+y;
+   x=y;
+   y=z;
+  }
+  for(c=1;c<=a;c++){
+
+   f=d+e;
+   d=e;
+   e=f;
+  }
+  q+=z/f;
+ }
+ printf("%.3lf",q);
+}
+第五个问题
+#include<stdio.h>
+int main(){
+ int a,b;
+ scanf("%d",&a);
+ while(a!=1){
+ if(a%2==0){
+  a=a/2;
+ }
+ else if(a%2==1&&a!=1){
+  a=a*3+1;
+ }
+ if(a==0)
+ printf("NO");
+ }
+ printf("YES");
+}
+第六个问题
+#include<stdio.h>
+int main(){
+ int a,b,d,c,x;
+ scanf("%d",&x);
+ for(a=1;a<(3*x-1);a++){
+  for(b=1;b<(3*x-1);b++){
+   if(b==a||b==3*x-2-a){
+    printf("*");
+   }
+   else
+   printf(" ");
+  }
+  printf("\n");
+ } 
+}
+第七个问题
+#include<stdio.h>
+int main(){
+ int a;
+ for(a=1;a<10000;a++){
+  if(a%2==1){
+   if(a%3==2){
+    if(a%5==4){
+     if(a%6==5){
+      if(a%7==0){
+       printf("%d",a);
+       break;
+      }
+     }
+    }
+   }
+  }
+ }
+}
+第八个问题
+#include<stdio.h>
+#include<math.h>
+int main(){
+    double j=0,k,f,a=1,x,l,b,g,z=1,m;
+    scanf("%lf",&x);
+   for(a=1;a<100;a++){
+        m=2*a-1;
+        z=-z;
+        f=1;
+        for(l=1;l<=m;l++){
+           f*=l;
+           }
+        b=x*x;
+        k=pow(x,m);
+        k=-k;
+        j+=k/f*z;
+     }
+    printf("%.2lf",j);
+}
+第九个问题
+#include<stdio.h>
+int main(){
+ int a,b=0,c=0;
+ do{
+  scanf("%d",&a);
+  if(a>0){
+   b+=a;
+   c++;
+  }
+ }while(a!=0);
+ printf("累加和=%d, 个数=%d",b,c);
+}
+第十个问题
+#include<stdio.h>
+int main(){
+ double a,b=0.01,c=0.01;
+ for(a=1;a<30;a++){
+  b*=2;
+  c+=b;
+ }
+ printf("陌生人给百万富翁的钱:%lf",30*100000);
+ printf("百万富翁给陌生人的钱:%.6lf",c);
+}
